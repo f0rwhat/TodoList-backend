@@ -279,7 +279,6 @@ pyrightconfig.json
 
 
 .idea/
-/docker-compose.yml
 core/media/*
 !core/media/.gitkeep
 !core/media/countries

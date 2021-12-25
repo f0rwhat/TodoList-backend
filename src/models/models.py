@@ -59,4 +59,4 @@ class UsersProjectsModel(Base):
     project_id = Column(Integer, ForeignKey('projects.id'))
 
     user = relationship("UserModel", back_populates="projects")
-    project = relationship("ProjectModel", back_populates="users")
+    project = relationship("ProjectModel", back_populates="users", cascade='all,delete')
